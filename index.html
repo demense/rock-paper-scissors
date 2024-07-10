@@ -7,7 +7,21 @@
 </head>
 <body>
   <script>
-    console.log("hello");
+    /* Create a function named getComputerChoice */
+    function getComputerChoice() {
+        /* Declare a variable randomInt */
+        let randomInt;
+        /* Generate a random number from 0 to 2 and assign it to randomInt */
+        randomInt = Math.floor(Math.random() * 3);
+        /* if randomInt is equal to 0 then display "Rock" else if randomInt equals 1 display "Paper" else if randomInt equals 2 display "Scissor" */ 
+        if (randomInt == 0) {
+            console.log("Rock");
+        } else if (randomInt == 1) {
+            console.log("Paper");
+        } else if (randomInt == 2) {
+            console.log("Scissors")}
+    } 
+    getComputerChoice();
   </script>  
 </body>
 </html>
