@@ -8,17 +8,13 @@
 <body>
   <script>
     "use strict";
-    /**/ 
-    
-    /**/
-    
+   
     function getComputerChoice() {
         const choices = ['rock', 'paper', 'scissors'];
         let randomInt = Math.floor(Math.random() * 3);
         let computerChoice = choices[randomInt];
         return computerChoice
     }
-    /**/ 
     
     function getHumanChoice() {
         let choice = prompt("Please choose one: Rock, Paper or Scissors");
@@ -37,7 +33,6 @@
                 alert("Please enter a valid choice.");
         }
     }
-    /**/ 
     
     function playGame() {
         let computerScore = 0;
@@ -107,6 +102,7 @@
         playRound();
         gameWinner();
     }
+
     playGame();
   </script>  
 </body>
