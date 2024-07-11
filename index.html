@@ -9,8 +9,7 @@
   <script>
     "use strict";
     /**/ 
-    let computerScore = 0;
-    let humanScore = 0;
+    
     /**/
     
     function getComputerChoice() {
@@ -39,7 +38,11 @@
         }
     }
     /**/ 
-    function playRound() {
+    
+    function playGame() {
+        let computerScore = 0;
+        let humanScore = 0;
+        function playRound() {
         let computerChoice = getComputerChoice();
         let humanChoice = getHumanChoice();
         console.log("Your choice is " + humanChoice);
@@ -87,10 +90,24 @@
             console.log("Computer's Score: " + computerScore);
             console.log("Your Score: " + humanScore);
         }
+        }
+        function gameWinner() { 
+        if (humanScore > computerScore) {
+            console.log("You're the winner!");
+        } else if (computerScore > humanScore) {
+            console.log("The computer is the winner!");
+        } else if (computerScore === humanScore) {
+            console.log("Nobody won!");
+        }
+        }
+        playRound();
+        playRound();
+        playRound();  
+        playRound();
+        playRound();
+        gameWinner();
     }
-    playRound();
-    playRound();
-    playRound();
+    playGame();
   </script>  
 </body>
 </html>
