@@ -26,7 +26,7 @@ buttons.forEach((button) => {
     } else if (event.target.id == "scissors") {
       humanChoice = "scissors";
     }
-    play();
+    playGame();
   });
 });
 
@@ -72,17 +72,10 @@ function playRound() {
 }
 
 function playGame() {
-  function gameWinner() {
-    if (humanScore > computerScore) {
+  playRound();
+    if (humanScore >= 5) {
       gameWinner.textContent = "You won the game!";
-    } else if (computerScore > humanScore) {
+    } else if (computerScore >= 5) {
       gameWinner.textContent = "The computer won the game!";
-    } else if (computerScore === humanScore) {
-      gameWinner.textContent = "Nobody won!";
-    }
-  }
-  playRound();
-  playRound();
-  playRound();
-  gameWinner();
+    } 
 }
