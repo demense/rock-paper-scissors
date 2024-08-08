@@ -36,38 +36,38 @@ function playRound() {
   comCho.textContent = "Computer choose: " + computerChoice;
   if (humanChoice == computerChoice) {
     roundWinner.textContent = "It's a tie!";
-    comScr.textContent = "Computer score is " + computerScore;
-    humScr.textContent = "Your score is " + humanScore;
+    comScr.textContent = "Computer score: " + computerScore;
+    humScr.textContent = "Your score: " + humanScore;
   } else if (humanChoice == "rock" && computerChoice == "paper") {
     roundWinner.textContent = "You lost this round!";
     computerScore = ++computerScore;
-    comScr.textContent = "Computer score is " + computerScore;
-    humScr.textContent = "Your score is " + humanScore;
+    comScr.textContent = "Computer score: " + computerScore;
+    humScr.textContent = "Your score: " + humanScore;
   } else if (humanChoice == "rock" && computerChoice == "scissors") {
     roundWinner.textContent = "You won this round!";
     humanScore = ++humanScore;
-    comScr.textContent = "Computer score is " + computerScore;
-    humScr.textContent = "Your score is " + humanScore;
+    comScr.textContent = "Computer score: " + computerScore;
+    humScr.textContent = "Your score: " + humanScore;
   } else if (humanChoice == "paper" && computerChoice == "rock") {
     roundWinner.textContent = "You won this round!";
     humanScore = ++humanScore;
-    comScr.textContent = "Computer score is " + computerScore;
-    humScr.textContent = "Your score is " + humanScore;
+    comScr.textContent = "Computer score: " + computerScore;
+    humScr.textContent = "Your score: " + humanScore;
   } else if (humanChoice == "paper" && computerChoice == "scissors") {
     roundWinner.textContent = "You lost this round!";
     computerScore = ++computerScore;
-    comScr.textContent = "Computer score is " + computerScore;
-    humScr.textContent = "Your score is " + humanScore;
+    comScr.textContent = "Computer score: " + computerScore;
+    humScr.textContent = "Your score: " + humanScore;
   } else if (humanChoice == "scissors" && computerChoice == "rock") {
     roundWinner.textContent = "You lost this round!";
     computerScore = ++computerScore;
-    comScr.textContent = "Computer score is " + computerScore;
-    humScr.textContent = "Your score is " + humanScore;
+    comScr.textContent = "Computer score: " + computerScore;
+    humScr.textContent = "Your score: " + humanScore;
   } else if (humanChoice == "scissors" && computerChoice == "paper") {
     roundWinner.textContent = "You won this round!";
     humanScore = ++humanScore;
-    comScr.textContent = "Computer score is " + computerScore;
-    humScr.textContent = "Your score is " + humanScore;
+    comScr.textContent = "Computer score: " + computerScore;
+    humScr.textContent = "Your score: " + humanScore;
   }
 }
 
